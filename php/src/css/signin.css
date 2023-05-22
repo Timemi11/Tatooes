@@ -1,0 +1,111 @@
+:root{
+    --bg0:#7a7878;
+    --bg1 : #FFFBE9;
+    --bg2 : #E3CAA5;
+    --bg3 : #CEAB93;
+    --bg4 : #AD8B73;
+}
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0; 
+}
+body{
+    background-image: url(../image/bc2bca2a82e4f1d2d76e86ab2fb8fd10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    backdrop-filter: blur(5px) sepia(80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.formContainer{
+    position: relative;
+    width: 50%;
+    height:25rem ;
+    display: flex;
+    flex-direction: column;
+}
+.formContainer h1{
+    position: relative;
+    text-align: center;
+    background-color: var(--bg1);
+    justify-self: center;
+    align-self: center;
+    width: 20%;
+    box-shadow: 0 0 0 2px black;
+    border-radius: .1rem;
+}
+i{
+    font-size: 26px;
+    left: 0;
+    top: 40px;
+    position: absolute;
+    background-color: var(--bg1);
+    font-weight: bold;
+}
+i:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+
+form{
+    border-radius: 0rem 5rem 5rem 5rem;
+    box-shadow: 0px 0px 5px 2px rgb(0, 0, 0);
+    background-color: var(--bg1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:25rem ;
+}
+span{
+    text-align: center;
+    width: 70%;
+    font-size: 20px;
+    padding: 1rem;
+}
+span input{
+    border: none;
+    padding: 1rem;
+    width: 80%;
+    height: 2.5rem;
+    background-color: var(--bg1);
+    border-bottom: 2px solid var(--bg0);
+}
+span input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--bg0);
+}
+input[type=submit]{
+    border: none;
+    width: 80%;
+    height: 2.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--bg2);
+    border-bottom:2px solid var(--bg0);
+    transition: box-shadow 250ms;
+    border-radius: 2rem;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: var(--bg2);
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+    border: none;
+}
+
+
+form a{
+    margin-top:1rem;
+    text-decoration: none;
+}
+form a:hover{
+    color: red;
+}
+
+
